@@ -1,0 +1,271 @@
+html{
+    background-color: black;
+}
+body{
+    background-color: black;
+    color: aqua;
+}
+.parallax {
+    height: 500px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+ 
+#news-slider{
+    margin-top: 30px;
+}
+.post-slide{
+    background: #fff;
+    margin: 0 15px;
+}
+.post-slide .post-img{
+    position:relative;
+    overflow: hidden;
+}
+.post-slide .post-img img{
+    width: 100%;
+    height: auto;
+    transform: scale(1,1);
+    transition:transform 0.50s linear;
+}
+.post-slide:hover .post-img img{
+    transform: scale(1.1,1.1);
+}
+.post-slide .over-layer{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    background:rgba(0, 0, 0,0.4);
+    transition:all 0.50s linear;
+}
+.post-slide:hover .over-layer{
+    opacity:1;
+    text-decoration:none;
+}
+.post-slide .over-layer i{
+    position: relative;
+    top:45%;
+    text-align:center;
+    display: block;
+    color:#fff;
+    font-size:25px;
+}
+.post-slide .post-content{
+    background:#fff;
+    padding: 8px 30px 40px;
+}
+.post-slide .post-title{
+    margin:8px 0 15px 0;
+}
+.post-slide .post-title a{
+    font-size:15px;
+    font-weight:bold;
+    color:#333;
+    display: inline-block;
+    text-transform:uppercase;
+    transition: all 0.3s ease 0s;
+}
+.post-slide .post-title a:hover{
+    text-decoration: none;
+    color:#3498db;
+}
+.post-slide .post-description{
+    line-height:24px;
+    color:#808080;
+    margin-bottom:40px;
+}
+.post-slide .post-date{
+    color:#a9a9a9;
+}
+.post-slide .post-date i{
+    font-size:20px;
+    margin-right:8px;
+    color: #CFDACE;
+}
+.post-slide .read-more{
+    padding:5px 10px;
+    float: right;
+    font-size:12px;
+    background:#e9e9e9;
+    color:#808080;
+    text-transform: uppercase;
+}
+.post-slide .read-more:hover{
+    background: #3498db;
+    text-decoration:none;
+    color:#fff;
+}
+.owl-controls .owl-buttons{
+    text-align:center;
+    margin-top:20px;
+}
+.owl-controls .owl-buttons .owl-prev{
+    background: #fff;
+    position: absolute;
+    top:-13%;
+    left:15px;
+    padding: 0 18px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    transition: background 0.5s ease 0s;
+}
+.owl-controls .owl-buttons .owl-next{
+    background: #fff;
+    position: absolute;
+    top:-13%;
+    right: 15px;
+    padding: 0 18px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    transition: background 0.5s ease 0s;
+}
+.owl-controls .owl-buttons .owl-prev:after,
+.owl-controls .owl-buttons .owl-next:after{
+    content:"\f104";
+    font-family: FontAwesome;
+    color: #333;
+    font-size:30px;
+}
+.owl-controls .owl-buttons .owl-next:after{
+    content:"\f105";
+}
+@media only screen and (max-width:1280px) {
+    .post-slide .post-content{
+        padding:10px;
+    }
+}
+
+
+/* =============================================================*/
+
+.pricingTable{
+    background: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    padding: 0 0 25px;
+    margin: 25px 15px 0;
+    border-radius: 30px;
+    transition: all 0.3s ease 0s;
+  }
+  .pricingTable:hover{
+    box-shadow: 0 0 15px rgba(0,0,0,0.2) inset, 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 15px;
+  }
+  .pricingTable .pricingTable-header{
+    color: #fff;
+    background-color: #192a56;
+    padding: 25px 10px 40px;
+    margin: 0 30px;
+    position: relative;
+    top: -20px;
+    -webkit-clip-path: polygon(100% 0, 100% 60%, 50% 100%, 0 60%, 0 0);
+    clip-path: polygon(100% 0, 100% 60%, 50% 100%, 0 60%, 0 0);
+  }
+  .pricingTable .pricingTable-header:before{
+    content: '';
+    background-color: #28417f;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+  }
+  .pricingTable .title{
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+  }
+  .pricingTable .month{
+    color: #fff;
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+  .pricingTable .price-value{
+    color: #192a56;
+    background-color: #e7e7e7;
+    padding: 70px 0 30px;
+    margin-top: -42px;
+    -webkit-clip-path: polygon(50% 40%, 100% 0, 100% 60%, 50% 100%, 0 60%, 0 0);
+    clip-path: polygon(50% 40%, 100% 0, 100% 60%, 50% 100%, 0 60%, 0 0);
+  }
+  .pricingTable .amount{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 35px;
+    display: inline-block;
+  }
+  .pricingTable .amount-sm{
+    font-size: 30px;
+    vertical-align: top;
+    margin-top: -10px;
+    display: inline-block;
+  }
+  .pricingTable .pricing-content{
+    color: #1C1C1C;
+    font-size: 18px;
+    line-height: 50px;
+    text-transform: uppercase;
+    padding: 25px 15px;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+  }
+  .pricingTable .pricing-content li i{
+    color: #192a56;
+    margin-right: 5px;
+  }
+  .pricingTable .pricingTable-signup{
+    color: #fff;
+    background: linear-gradient(165deg,#28417f 49%,#192a56 50%);
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    margin: 0 30px;
+    display: block;
+    transition:all 0.3s ease 0s;
+  }
+  .pricingTable .pricingTable-signup:hover{
+    letter-spacing: 3px;
+    text-shadow: 0 0 2px #000;
+    box-shadow: 0 0 20px -5px rgba(0,0,0,0.7);
+  }
+  .pricingTable.green .pricingTable-header{ background-color: #27ae60; }
+  .pricingTable.green .pricingTable-header:before{ background-color: #31c66f; }
+  .pricingTable.green .price-value,
+  .pricingTable.green .pricing-content li i{ color: #27ae60; }
+  .pricingTable.green .pricingTable-signup{
+    background: linear-gradient(165deg,#31c66f 49%,#27ae60 50%);
+  }
+  .pricingTable.pink .pricingTable-header{ background-color: #d3213c; }
+  .pricingTable.pink .pricingTable-header:before{ background-color: #f53b57; }
+  .pricingTable.pink .price-value,
+  .pricingTable.pink .pricing-content li i{ color: #d3213c; }
+  .pricingTable.pink .pricingTable-signup{
+    background: linear-gradient(165deg,#f53b57 49%,#d3213c 50%);
+  }
+  @media only screen and (max-width: 990px){
+    .pricingTable{ margin: 25px 0 50px; }
+  }
+  @media only screen and (max-width: 479px){
+    .pricingTable .pricing-content{
+        font-size: 15px;
+        padding-left: 10px;
+    }
+  }
